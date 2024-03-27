@@ -21,8 +21,9 @@
             </div>
             <div class="navbar-2">
                 <div class="logo">
-                    <router-link to="/" class="navbar-item-1"><img src="@/assets/images/logo-wavemax.png" alt=""></router-link>
-                    
+                    <router-link to="/" class="navbar-item-1"><img src="@/assets/images/logo-wavemax.png"
+                            alt=""></router-link>
+
                 </div>
                 <div class="location">
                     <img src="@/assets/images/map.png" alt="">
@@ -33,17 +34,17 @@
                 </div>
                 <div class="nav-2-btns">
                     <div class="franchise-btn">
-                        <button>Franchise</button>
+                        <router-link to="/FAQ" class="navbar-item-1"><button>Franchise</button></router-link>
                     </div>
                     <div class="location-btn">
-                        <button>Locations</button>
+                        <router-link to="/BLOG" class="navbar-item-1"><button>Locations</button></router-link>
                     </div>
                 </div>
 
             </div>
             <div class="nav-main">
                 <div class="logo-1">
-                    <router-link to="/"  ><img src="@/assets/images/logo-wavemax.png" alt=""></router-link>
+                    <router-link to="/"><img src="@/assets/images/logo-wavemax.png" alt=""></router-link>
                 </div>
                 <nav class="navbar">
 
@@ -69,6 +70,10 @@
                                     <div v-bind:class="{ 'active': isActive('/BLOG') }">
                                         <router-link to="/BLOG" @click="removeSidebar"
                                             class="navbar-item-s">BLOG</router-link>
+                                    </div>
+                                    <div v-bind:class="{ 'active': isActive('/Testimonials') }">
+                                        <router-link to="/Testimonials" @click="removeSidebar"
+                                            class="navbar-item-s">Reviews</router-link>
                                     </div>
                                 </div>
                             </transition>
@@ -101,11 +106,11 @@
                         class="navbar-item-side" @click="removeSidebar">Pickup &
                         Delivery</router-link>
                     <div class="drop-down-menu">
-                        <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
-                            class="navbar-item" @click="removeSidebar">About Us&nbsp;<i
-                                class="fa-solid fa-caret-down"></i></router-link>
+                        <h3><router-link to="/AboutPage"  @click="removeSidebar" v-bind:class="{ 'active': isActive('/AboutPage') }"
+                                    class="navbar-item">About Us</router-link>&nbsp;<i class="fa-solid fa-caret-down"  @click="toggleAboutDropdown"></i></h3>
+                        
                         <transition name="fade">
-                            <div class="dropdown-content">
+                            <div class="dropdown-content" v-show="showAboutDropdown">
                                 <div v-bind:class="{ 'active': isActive('/FAQ') }">
                                     <router-link to="/FAQ" @click="removeSidebar"
                                         class="navbar-item-s">FAQ</router-link>
@@ -114,11 +119,17 @@
                                     <router-link to="/BLOG" @click="removeSidebar"
                                         class="navbar-item-s">BLOG</router-link>
                                 </div>
+                                <div v-bind:class="{ 'active': isActive('/Testimonials') }">
+                                    <router-link to="/Testimonials" @click="removeSidebar"
+                                        class="navbar-item-s">Reviews</router-link>
+                                </div>
                             </div>
                         </transition>
                     </div>
-                    <router-link to="/MainContact" class="navbar-item-side" @click="removeSidebar">Contact
+                    <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
+                        class="navbar-item-side" @click="removeSidebar">Contact
                         Us</router-link>
+
                     <div class="side-bar-btns">
                         <div class="franchise-btn-side" @click="removeSidebar">
                             <button>Franchise</button>
@@ -134,7 +145,7 @@
         </div>
         <transition name="slide-down">
             <div v-if="showScrollNavbar" class="fixed-navbar" key="fixed-navbar">
-                <!-- New fixed navbar content -->
+
                 <div class="nav-main-2">
                     <div class="logo-1">
                         <img src="@/assets/images/logo-wavemax.png" alt="">
@@ -162,6 +173,10 @@
                                         <div v-bind:class="{ 'active': isActive('/BLOG') }">
                                             <router-link to="/BLOG" @click="removeSidebar"
                                                 class="navbar-item-s">BLOG</router-link>
+                                        </div>
+                                        <div v-bind:class="{ 'active': isActive('/Testimonials') }">
+                                            <router-link to="/Testimonials" @click="removeSidebar"
+                                                class="navbar-item-s">Reviews</router-link>
                                         </div>
                                     </div>
                                 </transition>
@@ -194,7 +209,7 @@
                             Delivery</router-link>
                         <div class="drop-down-menu">
                             <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
-                                class="navbar-item" @click="removeSidebar">
+                                class="navbar-item-side" @click="removeSidebar">
                                 About Us&nbsp;<i class="fa-solid fa-caret-down"></i>
                             </router-link>
                             <transition name="fade">
@@ -206,6 +221,10 @@
                                     <div>
                                         <router-link to="/BLOG" @click="removeSidebar"
                                             class="navbar-item-s">BLOG</router-link>
+                                    </div>
+                                    <div>
+                                        <router-link to="/Testimonials" @click="removeSidebar"
+                                            class="navbar-item-s">Reviews</router-link>
                                     </div>
                                 </div>
                             </transition>
@@ -236,6 +255,7 @@ export default {
     name: 'NavbarComponent',
     data() {
         return {
+            showAboutDropdown: false,
             activeTab: 'AboutPage',
             isSidebarOpen: false,
             sidebarWidth: '0px',
@@ -252,6 +272,9 @@ export default {
         window.removeEventListener('scroll', this.handleScroll);
     },
     methods: {
+        toggleAboutDropdown() {
+            this.showAboutDropdown = !this.showAboutDropdown;
+        },
         isActive(route) {
             return this.$route.path === route;
         },
@@ -295,9 +318,29 @@ export default {
 }
 
 .dropdown-content a {
+    display: flex;
+    flex-direction: row;
     color: rgb(0, 0, 0) !important;
+    width: 105px;
+    transition: background-color 0.3s ease;
+    /* Change color to background-color */
+}
 
-    transition: color 0.3s ease;
+.dropdown-content a:hover {
+    background-color: #3498db;
+    color: #fff;
+    /* Change text color on hover */
+}
+
+.dropdown-content.active {
+    /* Set initial background color */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.dropdown-content.active:hover {
+    background-color: #3498db;
+    /* Background color on hover */
 }
 
 .dropdown-content a:hover {
@@ -549,8 +592,8 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 34px;
-        height: auto;
+        height: 31px;
+        margin-top: 20px;
         justify-content: center;
         cursor: pointer;
     }
@@ -924,7 +967,7 @@ ul {
 .navbar-item-s {
     color: #fff;
     font-size: 1.1rem;
-    padding: 15px;
+    padding: 5px;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
@@ -941,8 +984,10 @@ ul {
     cursor: pointer;
     text-decoration: none;
     position: relative;
+    justify-content: space-between;
     transition: background-color 0.3s ease;
-    /* Smooth transition effect */
+    display: flex;
+    width: 175px;
 }
 
 .navbar-item:hover {

@@ -1,18 +1,9 @@
 <template>
     <div class="main-fold">
-        <div class="about-row-descp">
-            <div class="row-descp-col-1">
-                <h3>DROP-OFF LAUNDRY IN ARLINGTON, TX | WAVEMAX WASH & FOLD LAUNDROMAT | WAVEMAX® LAUNDRY</h3>
-            </div>
-            <div class="row-descp-col-1">
-                <div class="row-descp-link"><router-link to="/" class="row-descp">Home<i
-                            class="fa-solid fa-angle-right"></i></router-link></div>
-                
-            </div>
-        </div>
+      
         <div class="about-row">
 
-            <div class="about-col-1" data-aos="fade-down"  data-aos-delay="300">
+            <div class="about-col-1" data-aos="fade-down"  data-aos-delay="200">
                 <div class="about-col-1-head">
                     <img src="@/assets/images/rect.png" alt="">
                     <h1>WASH. DRY. FOLD. LAUNDRY IN ARLINGTON, TX</h1>
@@ -34,15 +25,15 @@
                         for you. Give us a try! 100% complete satisfaction is guaranteed!</p>
                 </div>
             </div>
-            <div class="about-col-2" data-aos="fade-up"  data-aos-delay="300">
+            <div class="about-col-2" data-aos="fade-up"  data-aos-delay="200">
                 <img src="@/assets/images/wavemax arlington tx3.jpg" alt="">
             </div>
         </div>
         <div class="about-row">
-            <div class="about-col-2" data-aos="fade-down"  data-aos-delay="300">
+            <div class="about-col-2" data-aos="fade-down"  data-aos-delay="200">
                 <img src="@/assets/images/wavemax arlington tx2.jpg" alt="">
             </div>
-            <div class="about-col-1" data-aos="fade-up"  data-aos-delay="300">
+            <div class="about-col-1" data-aos="fade-up"  data-aos-delay="200">
                 <div class="about-col-1-head">
                     <img src="@/assets/images/rect.png" alt="">
 

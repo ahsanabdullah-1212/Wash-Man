@@ -1,143 +1,9 @@
 <template>
-    <div class="main-blog" data-aos="fade-up" data-aos-delay="300">
+    <div class="main-blog" data-aos="fade-up" data-aos-delay="200">
         <div class="blog-head">
             <h1>Blogs</h1>
         </div>
         <div class="blog-row-1">
-            <!-- <div class="small-blogs">
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="300">
-                    <div class="blog-col-descp">
-                        <img src="@/assets/images/First.webp" alt="">
-                    </div>
-                    <div class="blog-main-col">
-                        <div class="blog-row-col-1">
-                            <div class="date">13</div>
-                            <div class="month">Jan</div>
-                        </div>
-                        <div class="blog-row-col-2">
-                            <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
-                            <p>
-                                Beyond Clean Clothes: Exploring the Untold Advantages
-                                Laundromats have long been hailed as convenient places to get your laundry done
-                                quickly and
-                                efficiently. However, they offer much more than just ...
-                            </p>
-                            <a href="">read more <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="400">
-                    <div class="blog-col-descp">
-                        <img src="@/assets/images/Second.webp" alt="">
-                    </div>
-                    <div class="blog-main-col">
-                        <div class="blog-row-col-1">
-                            <div class="date">13</div>
-                            <div class="month">Jan</div>
-                        </div>
-                        <div class="blog-row-col-2">
-                            <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
-                            <p>
-                                Beyond Clean Clothes: Exploring the Untold Advantages
-                                Laundromats have long been hailed as convenient places to get your laundry done
-                                quickly and
-                                efficiently. However, they offer much more than just ...
-                            </p>
-                            <a href="">read more <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="500">
-                    <div class="blog-col-descp">
-                        <img src="@/assets/images/Third.webp" alt="">
-                    </div>
-                    <div class="blog-main-col">
-                        <div class="blog-row-col-1">
-                            <div class="date">13</div>
-                            <div class="month">Jan</div>
-                        </div>
-                        <div class="blog-row-col-2">
-                            <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
-                            <p>
-                                Beyond Clean Clothes: Exploring the Untold Advantages
-                                Laundromats have long been hailed as convenient places to get your laundry done
-                                quickly and
-                                efficiently. However, they offer much more than just ...
-                            </p>
-                            <a href="">read more <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="550">
-                    <div class="blog-col-descp">
-                        <img src="@/assets/images/Fourth.webp" alt="">
-                    </div>
-                    <div class="blog-main-col">
-                        <div class="blog-row-col-1">
-                            <div class="date">13</div>
-                            <div class="month">Jan</div>
-                        </div>
-                        <div class="blog-row-col-2">
-                            <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
-                            <p>
-                                Beyond Clean Clothes: Exploring the Untold Advantages
-                                Laundromats have long been hailed as convenient places to get your laundry done
-                                quickly and
-                                efficiently. However, they offer much more than just ...
-                            </p>
-                            <a href="">read more <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="600">
-                    <div class="blog-col-descp">
-                        <img src="@/assets/images/Fifth.webp" alt="">
-                    </div>
-                    <div class="blog-main-col">
-                        <div class="blog-row-col-1">
-                            <div class="date">13</div>
-                            <div class="month">Jan</div>
-                        </div>
-                        <div class="blog-row-col-2">
-                            <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
-                            <p>
-                                Beyond Clean Clothes: Exploring the Untold Advantages
-                                Laundromats have long been hailed as convenient places to get your laundry done
-                                quickly and
-                                efficiently. However, they offer much more than just ...
-                            </p>
-                            <a href="">read more <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="590">
-                    <div class="blog-col-descp">
-                        <img class="last-img" src="@/assets/images/Sixth.jpg" alt="">
-                    </div>
-                    <div class="blog-main-col">
-                        <div class="blog-row-col-1">
-                            <div class="date">13</div>
-                            <div class="month">Jan</div>
-                        </div>
-                        <div class="blog-row-col-2">
-                            <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
-                            <p>
-                                Beyond Clean Clothes: Exploring the Untold Advantages
-                                Laundromats have long been hailed as convenient places to get your laundry done
-                                quickly and
-                                efficiently. However, they offer much more than just ...
-                            </p>
-                            <a href="">read more <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div> -->
             <div class="blog-col-1">
                 <div class="blog-col-descp">
                     <img src="@/assets/images/First.webp" alt="">
@@ -270,7 +136,160 @@
                 </div>
 
             </div>
-            
+            <div class="blog-col-1">
+                <div class="blog-col-descp">
+                    <img src="@/assets/images/3ba28e1b-0ce3-4d01-a89a-0936b6e353d2.jpg" alt="">
+                </div>
+                <div class="blog-main-col">
+                    <div class="blog-row-col-1">
+                        <div class="date">13</div>
+                        <div class="month">Jan</div>
+                    </div>
+                    <div class="blog-row-col-2">
+                        <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
+                        <p>
+                            Beyond Clean Clothes: Exploring the Untold Advantages
+                            Laundromats have long been hailed as convenient places to get your laundry done
+                            quickly and
+                            efficiently. However, they offer much more than just ...
+                        </p>
+                        <a href="">read more <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-col-1">
+                <div class="blog-col-descp">
+                    <img src="@/assets/images/3c9bbf36-716c-4138-afd6-19dc9bec9c1c.jpg" alt="">
+                </div>
+                <div class="blog-main-col">
+                    <div class="blog-row-col-1">
+                        <div class="date">13</div>
+                        <div class="month">Jan</div>
+                    </div>
+                    <div class="blog-row-col-2">
+                        <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
+                        <p>
+                            Beyond Clean Clothes: Exploring the Untold Advantages
+                            Laundromats have long been hailed as convenient places to get your laundry done
+                            quickly and
+                            efficiently. However, they offer much more than just ...
+                        </p>
+                        <a href="">read more <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-col-1">
+                <div class="blog-col-descp">
+                    <img src="@/assets/images/7f87bf1f-2695-4aee-a449-005c82cd12e4.jpg" alt="">
+                </div>
+                <div class="blog-main-col">
+                    <div class="blog-row-col-1">
+                        <div class="date">13</div>
+                        <div class="month">Jan</div>
+                    </div>
+                    <div class="blog-row-col-2">
+                        <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
+                        <p>
+                            Beyond Clean Clothes: Exploring the Untold Advantages
+                            Laundromats have long been hailed as convenient places to get your laundry done
+                            quickly and
+                            efficiently. However, they offer much more than just ...
+                        </p>
+                        <a href="">read more <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-col-1">
+                <div class="blog-col-descp">
+                    <img src="@/assets/images/08e46ebb-3314-4c81-ad3a-0a8c68e0677b.jpg" alt="">
+                </div>
+                <div class="blog-main-col">
+                    <div class="blog-row-col-1">
+                        <div class="date">13</div>
+                        <div class="month">Jan</div>
+                    </div>
+                    <div class="blog-row-col-2">
+                        <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
+                        <p>
+                            Beyond Clean Clothes: Exploring the Untold Advantages
+                            Laundromats have long been hailed as convenient places to get your laundry done
+                            quickly and
+                            efficiently. However, they offer much more than just ...
+                        </p>
+                        <a href="">read more <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-col-1">
+                <div class="blog-col-descp">
+                    <img src="@/assets/images/a74f6f5a-dbc8-4fe7-ab42-9d9b4368447f.jpg" alt="">
+                </div>
+                <div class="blog-main-col">
+                    <div class="blog-row-col-1">
+                        <div class="date">13</div>
+                        <div class="month">Jan</div>
+                    </div>
+                    <div class="blog-row-col-2">
+                        <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
+                        <p>
+                            Beyond Clean Clothes: Exploring the Untold Advantages
+                            Laundromats have long been hailed as convenient places to get your laundry done
+                            quickly and
+                            efficiently. However, they offer much more than just ...
+                        </p>
+                        <a href="">read more <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-col-1">
+                <div class="blog-col-descp">
+                    <img src="@/assets/images/a352bcd4-2a98-4c0c-9211-996b1dc88858.jpg" alt="">
+                </div>
+                <div class="blog-main-col">
+                    <div class="blog-row-col-1">
+                        <div class="date">13</div>
+                        <div class="month">Jan</div>
+                    </div>
+                    <div class="blog-row-col-2">
+                        <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
+                        <p>
+                            Beyond Clean Clothes: Exploring the Untold Advantages
+                            Laundromats have long been hailed as convenient places to get your laundry done
+                            quickly and
+                            efficiently. However, they offer much more than just ...
+                        </p>
+                        <a href="">read more <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-col-1">
+                <div class="blog-col-descp">
+                    <img src="@/assets/images/1aec1c25-9d28-440b-9fa5-b2cdd74f8240.jpg" alt="">
+                </div>
+                <div class="blog-main-col">
+                    <div class="blog-row-col-1">
+                        <div class="date">13</div>
+                        <div class="month">Jan</div>
+                    </div>
+                    <div class="blog-row-col-2">
+                        <h4>The Secret to perfectly Folded Clothes:Tips from WaveMaX Experts</h4>
+                        <p>
+                            Beyond Clean Clothes: Exploring the Untold Advantages
+                            Laundromats have long been hailed as convenient places to get your laundry done
+                            quickly and
+                            efficiently. However, they offer much more than just ...
+                        </p>
+                        <a href="">read more <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </template>
@@ -437,7 +456,7 @@ export default {
 }
 
 .main-blog {
-    margin-top: 120px;
+    margin-top: 60px;
 }
 
 .blog-head {

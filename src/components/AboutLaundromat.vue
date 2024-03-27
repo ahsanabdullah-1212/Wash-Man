@@ -1,15 +1,6 @@
 <template>
     <div class="main-about">
-        <div class="about-row-descp">
-            <div class="row-descp-col-1">
-                <h3>CLEAN & AFFORDABLE SELF-SERVE LAUNDROMAT</h3>
-            </div>
-            <div class="row-descp-col-1">
-                <div class="row-descp-link"><router-link to="/" class="row-descp">Home<i
-                            class="fa-solid fa-angle-right"></i></router-link></div>
-                <h3>CLEAN & AFFORDABLE SELF-SERVE LAUNDROMAT</h3>
-            </div>
-        </div>
+        
         <div class="about-row">
 
             <div class="about-col-1">

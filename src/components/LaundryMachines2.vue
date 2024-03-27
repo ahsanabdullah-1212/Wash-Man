@@ -4,12 +4,12 @@
 
         </div>
         <div class="laundry-machine-row-2">
-            <div class="laundry-machine-row-2-col-1" data-aos="fade-down" data-aos-delay="300">
+            <div class="laundry-machine-row-2-col-1" data-aos="fade-down" data-aos-delay="200">
                 <h2>CLEANER. <span style="color: #8fbe00;">FASTER.</span>SAFER. <br> <span style="color: #000;">PRICING
                         AND DISCOUNTS</span></h2>
                 <img src="@/assets/images/separator.png" alt="">
             </div>
-            <div class="laundry-machine-row-2-col-2" data-aos="fade-up" data-aos-delay="300">
+            <div class="laundry-machine-row-2-col-2" data-aos="fade-up" data-aos-delay="200">
                 <h2>DROP OFF LAUNDRY PRICING:</h2>
                 <br>
                 <p>For $1.39lb. 12lb minimum, we wash, dry, and fold your clothes and have them ready for pick-up in
@@ -75,6 +75,7 @@ export default {
 .laundry-machine-row-2-col-1 h2 {
     color: #0072c4;
     font-size: 50px;
+    font-weight: bolder;
     position: relative;
 }
 

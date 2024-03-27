@@ -2,15 +2,15 @@
     <div class="main-hero">
         <div class="hero-section">
             <div class="hero-section-col">
-                <div class="hero-col-decp-1" data-aos="fade-left" data-aos-delay="300">
+                <div class="hero-col-decp-1" data-aos="fade-left" data-aos-delay="200">
                     <h1 class="wave">Wash</h1>&nbsp;&nbsp; &nbsp; <h1 class="max">MAN</h1>
                     <h2 class="lan">LAUNDRY</h2>
                 </div>
                 <div class="hero-col-decp-2">
-                    <h1 data-aos="fade-left" data-aos-delay="300">Lahore, PK</h1>
-                    <h4 data-aos="fade-right" data-aos-delay="300"> Your Premier Laundromat in Lahore, PK!</h4>
+                    <h1 data-aos="fade-left" data-aos-delay="200">Lahore, PK</h1>
+                    <h4 data-aos="fade-right" data-aos-delay="200"> Your Premier Laundromat in Lahore, PK!</h4>
                     <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"> <button
-                            class="hero-col-btn" data-aos="fade-up" data-aos-delay="300">Learn
+                            class="hero-col-btn" data-aos="fade-up" data-aos-delay="200">Learn
                             More</button></router-link>
                 </div>
             </div>
@@ -101,7 +101,9 @@ export default {
         font-size: 36px;
     }
 }
-
+  a {
+    text-decoration: none;
+}
 .max {
     margin-left: -8px !important;
     font-family: "Playfair Display", sans-serif;
@@ -119,6 +121,12 @@ export default {
         font-size: 69.99px;
     }
 }
+@media(max-width:1024px) {
+    .max {
+        font-size: 46px;
+    }
+}
+
 @media(max-width:800px) {
     .max {
         font-size: 46px;
@@ -201,6 +209,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
+     
     background: url(@/assets/images/Hero-section.jpg) no-repeat center;
     background-size: cover;
 }

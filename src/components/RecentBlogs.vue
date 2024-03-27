@@ -1,11 +1,11 @@
 <template>
-    <div class="main-blog" data-aos="fade-up" data-aos-delay="300">
+    <div class="main-blog" data-aos="fade-up" data-aos-delay="200">
         <div class="blog-head">
             <h1>Recent Relevant Blogs</h1>
         </div>
         <div class="blog-row">
             <div class="small-blogs">
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="300">
+                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="200">
                     <div class="blog-col-descp">
                         <img src="@/assets/images/First.webp" alt="">
                     </div>
@@ -31,7 +31,7 @@
                     </div>
 
                 </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="400">
+                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="200">
                     <div class="blog-col-descp">
                         <img src="@/assets/images/Second.webp" alt="">
                     </div>
@@ -56,7 +56,7 @@
                     </div>
 
                 </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="500">
+                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="200">
                     <div class="blog-col-descp">
                         <img src="@/assets/images/Third.webp" alt="">
                     </div>
@@ -81,7 +81,7 @@
                     </div>
 
                 </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="550">
+                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="200">
                     <div class="blog-col-descp">
                         <img src="@/assets/images/Fourth.webp" alt="">
                     </div>
@@ -106,7 +106,7 @@
                     </div>
 
                 </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="600">
+                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="200">
                     <div class="blog-col-descp">
                         <img src="@/assets/images/Fifth.webp" alt="">
                     </div>
@@ -131,7 +131,7 @@
                     </div>
 
                 </div>
-                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="590">
+                <div class="blog-col-1" data-aos="fade-down" data-aos-delay="200">
                     <div class="blog-col-descp">
                         <img class="last-img" src="@/assets/images/Sixth.jpg" alt="">
                     </div>
@@ -524,7 +524,7 @@ export default {
 }
 
 .blog-col-descp img {
-    height: 21rem;
+    height: 19rem;
     border-radius: 15px;
 }
 

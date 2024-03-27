@@ -1,5 +1,6 @@
 <template>
     <div>
+        <HomeTag/>
         <washingFold/>
         <LaundromatAmenities/>
         <CustomerTestominals/>
@@ -17,11 +18,13 @@ import LaundromatAmenities from '@/components/LaundromatAmenities.vue';
 import CustomerTestominals from '@/components/CustomerTestominals.vue';
 import FrequentQuestion from '@/components/FrequentQuestion.vue';
 import AskedQuestion from '@/components/AskedQuestion.vue';
+import HomeTag from '@/components/HomeTag.vue';
 import washingFold from '@/components/washingFold.vue';
  
 export default {
     name: 'WashDry',
     components: {
+        HomeTag,
         LaundryMachines2,
         FrequentQuestion,
         washingFold,
