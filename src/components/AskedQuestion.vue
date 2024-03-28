@@ -11,7 +11,7 @@
           aria-expanded="false" aria-controls="collapseExample">
           <span class="col-2"></span>
           <span class="col">
-            How does self-service laundry work?
+            How does self-service laundry work for you?
           </span>
           <span class="col-2">
             <i class="fa-solid fa-angle-down"></i>
@@ -191,7 +191,11 @@ export default {
   margin: 20px;
   font-weight: bold;
 }
-
+@media(max-width:450px){
+  .main-ask-head h1 {
+    font-size: 25px;
+  }
+}
 .main-questions {
   margin-left: auto;
   margin-right: auto;

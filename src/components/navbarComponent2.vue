@@ -47,8 +47,6 @@
                     <router-link to="/"><img src="@/assets/images/logo-wavemax.png" alt=""></router-link>
                 </div>
                 <nav class="navbar">
-
-
                     <ul id="navbar">
                         <router-link to="/" v-bind:class="{ 'active': isActive('/') }"
                             class="navbar-item-1">Home</router-link>
@@ -59,6 +57,7 @@
                         <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }"
                             class="navbar-item">Pickup & Delivery</router-link>
                         <div class="drop-down-menu">
+
                             <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
                                 class="navbar-item">About Us&nbsp;<i class="fa-solid fa-caret-down"></i></router-link>
                             <transition name="fade">
@@ -71,81 +70,63 @@
                                         <router-link to="/BLOG" @click="removeSidebar"
                                             class="navbar-item-s">BLOG</router-link>
                                     </div>
-                                    <div v-bind:class="{ 'active': isActive('/Testimonials') }">
-                                        <router-link to="/Testimonials" @click="removeSidebar"
-                                            class="navbar-item-s">Reviews</router-link>
-                                    </div>
+
                                 </div>
                             </transition>
+                        </div>
+                        <div v-bind:class="{ 'active': isActive('/Testimonials') }">
+                            <router-link to="/Testimonials" @click="removeSidebar"
+                                class="navbar-item">Testimonials</router-link>
                         </div>
                         <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                             class="navbar-item">Contact Us</router-link>
                     </ul>
-
                 </nav>
                 <div id="menu-icon" @click="toggleSidebar" :class="{ 'active': isSidebarOpen }">
                     <i :class="{ 'fa-solid fa-bars': !isSidebarOpen, 'fa-solid fa-times': isSidebarOpen }"></i>
                 </div>
             </div>
-
             <div id="sidebar" :style="{ width: sidebarWidth }">
-                <span class="close-icon" @click="closeSidebar"><i class="fa-solid fa-xmark"></i></span>
-
-                <ul v-if="sidebarWidth !== '0px'">
-                    <div class="logo-side">
-                        <img src="@/assets/images/logo-wavemax.png" alt="">
-                    </div>
-                    <router-link to="/" v-bind:class="{ 'active': isActive('/') }" class="navbar-item-side-1"
-                        @click="removeSidebar">Home</router-link>
-                    <router-link to="/SelfServe" v-bind:class="{ 'active': isActive('/SelfServe') }"
-                        class="navbar-item-side" @click="removeSidebar">Self-Serve
-                        Laundry</router-link>
-                    <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
-                        class="navbar-item-side" @click="removeSidebar">Wash-Dry-Fold</router-link>
-                    <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }"
-                        class="navbar-item-side" @click="removeSidebar">Pickup &
-                        Delivery</router-link>
-                    <div class="drop-down-menu">
-                        <h3><router-link to="/AboutPage"  @click="removeSidebar" v-bind:class="{ 'active': isActive('/AboutPage') }"
-                                    class="navbar-item">About Us</router-link>&nbsp;<i class="fa-solid fa-caret-down"  @click="toggleAboutDropdown"></i></h3>
-                        
-                        <transition name="fade">
-                            <div class="dropdown-content" v-show="showAboutDropdown">
-                                <div v-bind:class="{ 'active': isActive('/FAQ') }">
-                                    <router-link to="/FAQ" @click="removeSidebar"
-                                        class="navbar-item-s">FAQ</router-link>
-                                </div>
-                                <div v-bind:class="{ 'active': isActive('/BLOG') }">
-                                    <router-link to="/BLOG" @click="removeSidebar"
-                                        class="navbar-item-s">BLOG</router-link>
-                                </div>
-                                <div v-bind:class="{ 'active': isActive('/Testimonials') }">
-                                    <router-link to="/Testimonials" @click="removeSidebar"
-                                        class="navbar-item-s">Reviews</router-link>
-                                </div>
-                            </div>
-                        </transition>
-                    </div>
-                    <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
-                        class="navbar-item-side" @click="removeSidebar">Contact
-                        Us</router-link>
-
-                    <div class="side-bar-btns">
-                        <div class="franchise-btn-side" @click="removeSidebar">
-                            <button>Franchise</button>
-                        </div>
-                        <div class="location-btn-side" @click="removeSidebar">
-                            <button>Locations</button>
-                        </div>
-                    </div>
-                </ul>
-
-
+    <span class="close-icon" @click="closeSidebar"><i class="fa-solid fa-xmark"></i></span>
+    <ul v-if="isSidebarOpen">
+      <div class="logo-side">
+        <img src="@/assets/images/logo-wavemax.png" alt="">
+      </div>
+      <router-link to="/" v-bind:class="{ 'active': isActive('/') }" class="navbar-item-side-1" @click="toggleSidebar">Home</router-link>
+      <router-link to="/SelfServe" v-bind:class="{ 'active': isActive('/SelfServe') }" class="navbar-item-side" @click="toggleSidebar">Self-Serve Laundry</router-link>
+      <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }" class="navbar-item-side" @click="toggleSidebar">Wash-Dry-Fold</router-link>
+      <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }" class="navbar-item-side" @click="toggleSidebar">Pickup & Delivery</router-link>
+      <div class="drop-down-menu">
+        <h3 @click="toggleAboutDropdown">
+          <router-link to="/AboutPage" @click="closeSidebar" v-bind:class="{ 'active': isActive('/AboutPage') }" class="navbar-item-drop">About Us</router-link>
+          &nbsp;<i class="fa-solid fa-caret-down"></i>
+        </h3>
+        <transition name="fade">
+          <div class="dropdown-content" v-show="showAboutDropdown">
+            <div>
+              <router-link to="/FAQ" @click="closeDropdownSidebar" class="navbar-item-s">FAQ</router-link>
             </div>
+            <div>
+              <router-link to="/BLOG" @click="closeDropdownSidebar" class="navbar-item-s">BLOG</router-link>
+            </div>
+          </div>
+        </transition>
+      </div>
+      <router-link to="/Testimonials" v-bind:class="{ 'active': isActive('/Testimonials') }" class="navbar-item-side" @click="toggleSidebar">Testimonials</router-link>
+      <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }" class="navbar-item-side" @click="toggleSidebar">Contact</router-link>
+      <div class="side-bar-btns">
+        <div class="franchise-btn-side" @click="toggleSidebar">
+          <router-link to="/FAQ" class="navbar-item-1"><button>Franchise</button></router-link>
+        </div>
+        <div class="location-btn-side" @click="toggleSidebar">
+          <router-link to="/BLOG" class="navbar-item-1"><button>Locations</button></router-link>
+        </div>
+      </div>
+    </ul>
+  </div>
         </div>
         <transition name="slide-down">
             <div v-if="showScrollNavbar" class="fixed-navbar" key="fixed-navbar">
-
                 <div class="nav-main-2">
                     <div class="logo-1">
                         <img src="@/assets/images/logo-wavemax.png" alt="">
@@ -174,14 +155,14 @@
                                             <router-link to="/BLOG" @click="removeSidebar"
                                                 class="navbar-item-s">BLOG</router-link>
                                         </div>
-                                        <div v-bind:class="{ 'active': isActive('/Testimonials') }">
-                                            <router-link to="/Testimonials" @click="removeSidebar"
-                                                class="navbar-item-s">Reviews</router-link>
-                                        </div>
+
                                     </div>
                                 </transition>
                             </div>
-
+                            <div v-bind:class="{ 'active': isActive('/Testimonials') }">
+                                <router-link to="/Testimonials" @click="removeSidebar"
+                                    class="navbar-item">Testimonials</router-link>
+                            </div>
                             <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                                 class="navbar-item">Contact Us</router-link>
                         </ul>
@@ -191,125 +172,83 @@
                     </div>
                 </div>
                 <div id="sidebar" :style="{ width: sidebarWidth }">
-                    <span class="close-icon" @click="closeSidebar"><i class="fa-solid fa-xmark"></i></span>
-
-                    <ul v-if="sidebarWidth !== '0px'">
-                        <div class="logo-side">
-                            <img src="@/assets/images/logo-wavemax.png" alt="">
-                        </div>
-                        <router-link to="/" v-bind:class="{ 'active': isActive('/') }" class="navbar-item-side-1"
-                            @click="removeSidebar">Home</router-link>
-                        <router-link to="/SelfServe" v-bind:class="{ 'active': isActive('/SelfServe') }"
-                            class="navbar-item-side" @click="removeSidebar">Self-Serve
-                            Laundry</router-link>
-                        <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
-                            class="navbar-item-side" @click="removeSidebar">Wash-Dry-Fold</router-link>
-                        <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }"
-                            class="navbar-item-side" @click="removeSidebar">Pickup &
-                            Delivery</router-link>
-                        <div class="drop-down-menu">
-                            <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
-                                class="navbar-item-side" @click="removeSidebar">
-                                About Us&nbsp;<i class="fa-solid fa-caret-down"></i>
-                            </router-link>
-                            <transition name="fade">
-                                <div class="dropdown-content">
-                                    <div>
-                                        <router-link to="/FAQ" @click="removeSidebar"
-                                            class="navbar-item-s">FAQ</router-link>
-                                    </div>
-                                    <div>
-                                        <router-link to="/BLOG" @click="removeSidebar"
-                                            class="navbar-item-s">BLOG</router-link>
-                                    </div>
-                                    <div>
-                                        <router-link to="/Testimonials" @click="removeSidebar"
-                                            class="navbar-item-s">Reviews</router-link>
-                                    </div>
-                                </div>
-                            </transition>
-                        </div>
-                        <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
-                            class="navbar-item-side" @click="removeSidebar">Contact
-                            Us</router-link>
-                        <div class="side-bar-btns">
-                            <div class="franchise-btn-side" @click="removeSidebar">
-                                <button>Franchise</button>
-                            </div>
-                            <div class="location-btn-side" @click="removeSidebar">
-                                <button>Locations</button>
-                            </div>
-                        </div>
-                    </ul>
-
-
-                </div>
+    <span class="close-icon" @click="closeSidebar"><i class="fa-solid fa-xmark"></i></span>
+    <ul v-if="isSidebarOpen">
+      <div class="logo-side">
+        <img src="@/assets/images/logo-wavemax.png" alt="">
+      </div>
+      <router-link to="/" v-bind:class="{ 'active': isActive('/') }" class="navbar-item-side-1" @click="toggleSidebar">Home</router-link>
+      <router-link to="/SelfServe" v-bind:class="{ 'active': isActive('/SelfServe') }" class="navbar-item-side" @click="toggleSidebar">Self-Serve Laundry</router-link>
+      <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }" class="navbar-item-side" @click="toggleSidebar">Wash-Dry-Fold</router-link>
+      <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }" class="navbar-item-side" @click="toggleSidebar">Pickup & Delivery</router-link>
+      <div class="drop-down-menu">
+        <h3 @click="toggleAboutDropdown">
+          <router-link to="/AboutPage" @click="closeSidebar" v-bind:class="{ 'active': isActive('/AboutPage') }" class="navbar-item-drop">About Us</router-link>
+          &nbsp;<i class="fa-solid fa-caret-down"></i>
+        </h3>
+        <transition name="fade">
+          <div class="dropdown-content" v-show="showAboutDropdown">
+            <div>
+              <router-link to="/FAQ" @click="closeDropdownSidebar" class="navbar-item-s">FAQ</router-link>
+            </div>
+            <div>
+              <router-link to="/BLOG" @click="closeDropdownSidebar" class="navbar-item-s">BLOG</router-link>
+            </div>
+          </div>
+        </transition>
+      </div>
+      <router-link to="/Testimonials" v-bind:class="{ 'active': isActive('/Testimonials') }" class="navbar-item-side" @click="toggleSidebar">Testimonials</router-link>
+      <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }" class="navbar-item-side" @click="toggleSidebar">Contact</router-link>
+      <div class="side-bar-btns">
+        <div class="franchise-btn-side" @click="toggleSidebar">
+          <router-link to="/FAQ" class="navbar-item-1"><button>Franchise</button></router-link>
+        </div>
+        <div class="location-btn-side" @click="toggleSidebar">
+          <router-link to="/BLOG" class="navbar-item-1"><button>Locations</button></router-link>
+        </div>
+      </div>
+    </ul>
+  </div>
             </div>
         </transition>
     </div>
-
 </template>
 
 <script>
 export default {
-    name: 'NavbarComponent',
-    data() {
-        return {
-            showAboutDropdown: false,
-            activeTab: 'AboutPage',
-            isSidebarOpen: false,
-            sidebarWidth: '0px',
-            showScrollNavbar: false,
-            lastScrollPosition: 0,
-            isAtTop: true
-        };
+  name: 'NavbarComponent',
+  data() {
+    return {
+      showAboutDropdown: false,
+      isSidebarOpen: false,
+      sidebarWidth: '0px',
+    };
+  },
+  methods: {
+    toggleAboutDropdown() {
+      this.showAboutDropdown = !this.showAboutDropdown;
     },
-    mounted() {
-        window.addEventListener('scroll', this.handleScroll);
-        this.isAtTop = window.pageYOffset <= 0; // Check if page is at the top on mountZ
+    isActive(route) {
+      return this.$route.path === route;
     },
-    beforeDestroy() {
-        window.removeEventListener('scroll', this.handleScroll);
+    toggleSidebar() {
+      this.isSidebarOpen = !this.isSidebarOpen;
+      this.sidebarWidth = this.isSidebarOpen ? '300px' : '0px';
+      if (!this.isSidebarOpen) {
+        this.showAboutDropdown = false; // Close the dropdown when sidebar is closed
+      }
     },
-    methods: {
-        toggleAboutDropdown() {
-            this.showAboutDropdown = !this.showAboutDropdown;
-        },
-        isActive(route) {
-            return this.$route.path === route;
-        },
-
-        removeSidebar() {
-            this.isSidebarOpen = false;
-            this.sidebarWidth = '0px';
-        },
-        toggleSidebar() {
-            this.isSidebarOpen = !this.isSidebarOpen;
-            this.sidebarWidth = this.isSidebarOpen ? '300px' : '0px';
-        },
-        closeSidebar() {
-            this.isSidebarOpen = false;
-            this.sidebarWidth = '0px';
-        },
-        handleScroll() {
-            const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-            if (window.scrollY > 230) {
-                // Scrolling down
-                this.showScrollNavbar = true;
-            } else {
-                // Scrolling up
-                if (currentScrollPosition <= 0) {
-                    // Check if scrolled to the top
-                    this.isAtTop = true;
-                }
-                if (this.isAtTop) {
-                    // Only show navbar if at top of page
-                    this.showScrollNavbar = false;
-                }
-            }
-            this.lastScrollPosition = currentScrollPosition <= 0 ? 0 : currentScrollPosition;
-        }
-    }
+    closeSidebar() {
+      this.isSidebarOpen = false;
+      this.sidebarWidth = '0px';
+      this.showAboutDropdown = false; // Close the dropdown when sidebar is closed
+    },
+    closeDropdownSidebar() {
+      this.isSidebarOpen = false;
+      this.sidebarWidth = '0px';
+      this.showAboutDropdown = false; // Close the dropdown when link in dropdown is clicked
+    },
+  },
 };
 </script>
 <style scoped>
@@ -976,6 +915,17 @@ ul {
     /* Smooth transition effect */
 }
 
+.navbar-item-drop {
+    width: 175px;
+    font-size: 1rem;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
 .navbar-item {
     color: #fff;
     font-size: 1.5rem;
@@ -987,7 +937,7 @@ ul {
     justify-content: space-between;
     transition: background-color 0.3s ease;
     display: flex;
-    width: 175px;
+
 }
 
 .navbar-item:hover {

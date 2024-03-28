@@ -214,6 +214,18 @@ export default {
     background-size: cover;
 }
 
+@media(max-width:1024px){
+    .hero-section {
+        height: 493px;
+    }
+
+}
+@media(max-width:450px){
+    .hero-section {
+        height: auto;
+    }
+
+}
 .hero-section-col {
     position: relative;
     padding: 200px;

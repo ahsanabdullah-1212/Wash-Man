@@ -13,6 +13,8 @@
     flex-direction :row;
 }
 .drop-down-menu i {
+    color: #fff;
+    margin-top: 7px;
     margin-left:  20px;
 }
 .navbar {

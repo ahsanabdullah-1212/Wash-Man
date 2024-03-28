@@ -286,12 +286,12 @@ export default {
     flex-direction: row;
     /* max-width: 1400px; */
 }
-
-@media(max-width:1024px) {
+@media(max-width:1440px) {
     .laundry-machine {
         padding: 0px;
     }
 }
+ 
 
 .laundry-machine-row-1 {
     display: flex;

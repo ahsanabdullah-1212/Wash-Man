@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <navbarComponent2 />
+     
     <button @click="scrollToTop" v-if="showScrollButton" class="scroll-top-button">↑</button>
     <router-view />
   </div>
@@ -9,11 +10,13 @@
 <script>
 import './assets/styles/global.css';
 import navbarComponent2 from './components/navbarComponent2.vue';
+ 
 import '@fortawesome/fontawesome-free/css/all.css'
 
 export default {
   name: 'App',
   components: {
+    
     navbarComponent2,
   },
   data() {
