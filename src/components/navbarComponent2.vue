@@ -222,9 +222,19 @@ export default {
       showAboutDropdown: false,
       isSidebarOpen: false,
       sidebarWidth: '0px',
+      showScrollNavbar: false,
     };
   },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
   methods: {
+    handleScroll() {
+      this.showScrollNavbar = window.scrollY > 200;
+    },
     toggleAboutDropdown() {
       this.showAboutDropdown = !this.showAboutDropdown;
     },
@@ -235,22 +245,23 @@ export default {
       this.isSidebarOpen = !this.isSidebarOpen;
       this.sidebarWidth = this.isSidebarOpen ? '300px' : '0px';
       if (!this.isSidebarOpen) {
-        this.showAboutDropdown = false; // Close the dropdown when sidebar is closed
+        this.showAboutDropdown = false;
       }
     },
     closeSidebar() {
       this.isSidebarOpen = false;
       this.sidebarWidth = '0px';
-      this.showAboutDropdown = false; // Close the dropdown when sidebar is closed
+      this.showAboutDropdown = false;
     },
     closeDropdownSidebar() {
       this.isSidebarOpen = false;
       this.sidebarWidth = '0px';
-      this.showAboutDropdown = false; // Close the dropdown when link in dropdown is clicked
+      this.showAboutDropdown = false;
     },
   },
 };
 </script>
+
 <style scoped>
 .active {
     background-color: rgb(135, 187, 13);
