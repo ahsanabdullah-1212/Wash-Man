@@ -1,5 +1,5 @@
 <template>
-    <div class="main-blog" data-aos="fade-up" data-aos-delay="200">
+    <div class="main-blog" data-aos="fade-up" data-aos-delay="150">
         <div class="blog-head">
             <h1>Blogs</h1>
         </div>

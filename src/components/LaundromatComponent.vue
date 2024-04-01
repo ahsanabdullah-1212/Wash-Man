@@ -1,5 +1,5 @@
 <template>
-    <div class="main-laundromat" data-aos="fade-down" data-aos-delay="200">
+    <div class="main-laundromat" data-aos="fade-down" data-aos-delay="150">
         <div class="laundromat">
             <div class="laundromat-col">
                 <img src="@/assets/images/rect.png" alt="">

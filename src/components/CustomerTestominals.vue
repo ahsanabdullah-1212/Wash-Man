@@ -5,7 +5,7 @@
             <h2>Customer Testimonials</h2>
         </div>
         <div class="customer-reviews">
-            <div class="review-2" data-aos="fade-down" data-aos-delay="200">
+            <div class="review-2" data-aos="fade-down" data-aos-delay="150">
                 <p>One of the best laundry</p>
                 <div class="review-desc">
                     <div class="review-desc-1">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review-2" data-aos="fade-down" data-aos-delay="200">
+            <div class="review-2" data-aos="fade-down" data-aos-delay="150">
                 <p>Very Smooth and Easy Process w/ the Card Setup. Clean and Quiet. Great Staff. My New Go Too
                 </p>
                 <div class="review-desc">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review-2" data-aos="fade-down" data-aos-delay="200">
+            <div class="review-2" data-aos="fade-down" data-aos-delay="150">
                 <p>"I've been using this laundry service for months now, and I'm always impressed by the quality
                     of their work. My clothes come back looking and smelling fresh every time!"</p>
                 <div class="review-desc">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review-2" data-aos="fade-down" data-aos-delay="200">
+            <div class="review-2" data-aos="fade-down" data-aos-delay="150">
                 <p>"I was skeptical about outsourcing my laundry at first, but this service has exceeded my
                     expectations. It's convenient, affordable, and the customer service is top-notch."</p>
                 <div class="review-desc">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review-2" data-aos="fade-down" data-aos-delay="200">
+            <div class="review-2" data-aos="fade-down" data-aos-delay="150">
                 <p>"I love how easy it is to schedule a pickup and delivery with this laundry service. It saves
                     me so much time and hassle each week!"</p>
                 <div class="review-desc">
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review-2" data-aos="fade-down" data-aos-delay="200">
+            <div class="review-2" data-aos="fade-down" data-aos-delay="150">
                 <p> "As a busy professional, I rely on this laundry service to keep my wardrobe in top
                     condition. They handle everything with care, and I appreciate the attention to detail."</p>
                 <div class="review-desc">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review-2" data-aos="fade-down" data-aos-delay="200">
+            <div class="review-2" data-aos="fade-down" data-aos-delay="150">
                 <p>"I've tried a few different laundry services in the past, but this one stands out for its
                     reliability and consistency. I highly recommend giving them a try!"</p>
                 <div class="review-desc">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review-2" data-aos="fade-down" data-aos-delay="200">
+            <div class="review-2" data-aos="fade-down" data-aos-delay="150">
                 <p> "This laundry service has been a game-changer for me. It's so convenient to have my clothes
                     picked up, cleaned, and delivered back to me without any hassle. Definitely worth it!"</p>
                 <div class="review-desc">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <swiper data-aos="fade-down" data-aos-delay="200" class="mySwiper" :slidesPerView="3" :spaceBetween="20"
+            <swiper data-aos="fade-down" data-aos-delay="150" class="mySwiper" :slidesPerView="3" :spaceBetween="20"
                 :autoplay="{
                 delay: 2500,
                 disableOnInteraction: false,

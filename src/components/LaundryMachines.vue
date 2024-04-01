@@ -2,7 +2,7 @@
     <div class="main-laundry-machine">
         <div class="laundry-machine">
             <div class="laundry-machine-row-1">
-                <div class="laundry-machine-col-1" data-aos="fade-down" data-aos-delay="200">
+                <div class="laundry-machine-col-1" data-aos="fade-down" data-aos-delay="150">
                     <img src="@/assets/images/rect.png" alt="">
                     <h2>Self-Serve Laundry Machines</h2>
                     <p>
@@ -25,7 +25,7 @@
                         <br>
                     </p>
                 </div>
-                <div class="laundry-machine-col-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="laundry-machine-col-2" data-aos="fade-up" data-aos-delay="150">
                     <div class="laundry-machine-col-2-col-1">
                         <img src="@/assets/images/girl_smile-min.jpg" alt="">
                     </div>
@@ -37,12 +37,12 @@
             </div>
         </div>
         <div class="laundry-machine-row-2">
-            <div class="laundry-machine-row-2-col-1" data-aos="fade-down" data-aos-delay="200">
+            <div class="laundry-machine-row-2-col-1" data-aos="fade-down" data-aos-delay="150">
                 <h2>WASH. <span style="color: #8fbe00;">DRY</span>. FOLD. <br> <span style="color: #000;">DROP-OFF
                         SERVICE</span></h2>
                         <img src="@/assets/images/separator.png" alt="">
             </div>
-            <div class="laundry-machine-row-2-col-2" data-aos="fade-up" data-aos-delay="200">
+            <div class="laundry-machine-row-2-col-2" data-aos="fade-up" data-aos-delay="150">
                 <p>No time? Tired? Lazy? or just hate doing laundry?</p>
                 <br>
                 <p>Let us do your laundry for you! We wash, dry and fold your clothes.

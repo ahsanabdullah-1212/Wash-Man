@@ -13,7 +13,7 @@
     </div>
     <div class="about-row">
 
-      <div class="about-col-1" data-aos="fade-down" data-aos-delay="200">
+      <div class="about-col-1" data-aos="fade-down" data-aos-delay="150">
         <div class="about-col-1-head">
           <img src="@/assets/images/rect.png" alt="">
           <h1>PICKUP & DELIVERY</h1>
@@ -35,15 +35,15 @@
           </p>
         </div>
       </div>
-      <div class="about-col-2" data-aos="fade-up" data-aos-delay="200">
+      <div class="about-col-2" data-aos="fade-up" data-aos-delay="150">
         <img src="@/assets/images/wavemax mesquite tx3.jpg" alt="">
       </div>
     </div>
     <div class="about-row">
-      <div class="about-col-2" data-aos="fade-down" data-aos-delay="200">
+      <div class="about-col-2" data-aos="fade-down" data-aos-delay="150">
         <img src="@/assets/images/wavemax arlington tx3.jpg" alt="">
       </div>
-      <div class="about-col-1" data-aos="fade-up" data-aos-delay="200">
+      <div class="about-col-1" data-aos="fade-up" data-aos-delay="150">
         <div class="about-col-1-head">
           <img src="@/assets/images/rect.png" alt="">
           <h1>HOW MUCH DOES LAUNDRY WEIGH?</h1>

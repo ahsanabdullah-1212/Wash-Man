@@ -1,7 +1,7 @@
 <template>
   <section id="FAQ">
     <div class="main-ask"  >
-    <div class="main-ask-head" data-aos="fade-down" data-aos-delay="200">
+    <div class="main-ask-head" data-aos="fade-down" data-aos-delay="150">
       <h1>Frequently Asked Questions (FAQ)</h1>
     </div>
     <div class="main-questions">

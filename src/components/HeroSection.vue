@@ -2,15 +2,15 @@
     <div class="main-hero">
         <div class="hero-section">
             <div class="hero-section-col">
-                <div class="hero-col-decp-1" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-col-decp-1" data-aos="fade-left" data-aos-delay="150">
                     <h1 class="wave">Wash</h1>&nbsp;&nbsp; &nbsp; <h1 class="max">MAN</h1>
                     <h2 class="lan">LAUNDRY</h2>
                 </div>
                 <div class="hero-col-decp-2">
-                    <h1 data-aos="fade-left" data-aos-delay="200">Lahore, PK</h1>
-                    <h4 data-aos="fade-right" data-aos-delay="200"> Your Premier Laundromat in Lahore, PK!</h4>
+                    <h1 data-aos="fade-left" data-aos-delay="150">Lahore, PK</h1>
+                    <h4 data-aos="fade-right" data-aos-delay="150"> Your Premier Laundromat in Lahore, PK!</h4>
                     <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"> <button
-                            class="hero-col-btn" data-aos="fade-up" data-aos-delay="200">Learn
+                            class="hero-col-btn" data-aos="fade-up" data-aos-delay="150">Learn
                             More</button></router-link>
                 </div>
             </div>

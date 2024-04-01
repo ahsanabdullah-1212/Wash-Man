@@ -1,5 +1,5 @@
 <template>
-    <div class="main-laundromat-amenities" data-aos="fade-down" data-aos-delay="200">
+    <div class="main-laundromat-amenities" data-aos="fade-down" data-aos-delay="150">
         <div class="amenities-row">
             <h2>Our Laundromat Amenities</h2>
             <div class="amenities-list">
