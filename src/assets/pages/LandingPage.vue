@@ -4,6 +4,7 @@
         <LaundromatComponent/>
         <LaundryMachines/>
         <LaundromatAmenities/>
+        <OrderDetail/>
         <CustomerTestominals/>
         <RecentBlogs/>
         <AskedQuestion/>
@@ -13,6 +14,7 @@
     </div>
 </template>
 <script>
+import OrderDetail from '@/components/OrderDetail.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import MainFooter from '@/components/MainFooter.vue';
 import LaundromatComponent from '@/components/LaundromatComponent.vue';
@@ -25,6 +27,7 @@ import LaundryMachines from '@/components/LaundryMachines.vue';
 export default {
     name: 'LandingPage',
     components: {
+        OrderDetail,
         FrequentQuestion,
         AskedQuestion,
         RecentBlogs,

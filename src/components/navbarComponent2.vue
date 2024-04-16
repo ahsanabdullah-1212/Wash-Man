@@ -13,9 +13,10 @@
                     </div>
                 </div>
                 <div class="social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-google"></i>
-                    <i class="fa-solid fa-phone"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100090017744249" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=03351757297" target="_blank"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://stechsole.com" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    
                     <img src="@/assets/images/country.png" alt="">
                 </div>
             </div>
