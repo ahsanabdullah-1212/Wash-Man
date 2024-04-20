@@ -62,6 +62,8 @@
                         </div>
                         <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                             class="navbar-item">Contact Us</router-link>
+                        <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
+                            class="navbar-item">Order</router-link>
                         <div class="drop-down-menu">
 
                             <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
@@ -99,6 +101,7 @@
                         class="navbar-item-side" @click="toggleSidebar">Wash-Dry-Fold</router-link>
                     <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }"
                         class="navbar-item-side" @click="toggleSidebar">Pickup & Delivery</router-link>
+                       
                     <div class="drop-down-menu">
                         <h3 @click="toggleAboutDropdown">
                             <router-link to="/AboutPage" @click="closeSidebar"
@@ -123,6 +126,8 @@
                         class="navbar-item-side" @click="toggleSidebar">Testimonials</router-link>
                     <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                         class="navbar-item-side" @click="toggleSidebar">Contact</router-link>
+                        <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
+                        class="navbar-item-side" @click="toggleSidebar">Order</router-link>
                     <div class="side-bar-btns">
                         <div class="franchise-btn-side" @click="toggleSidebar">
                             <router-link to="/MainContact" class="navbar-item-1"><button>Contact
@@ -154,6 +159,9 @@
                             </div>
                             <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                                 class="navbar-item">Contact Us</router-link>
+                            <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
+                                class="navbar-item">Order</router-link>
+                                 
                             <div class="drop-down-menu">
                                 <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
                                     class="navbar-item">About Us&nbsp;<i
@@ -215,6 +223,8 @@
                             class="navbar-item-side" @click="toggleSidebar">Testimonials</router-link>
                         <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                             class="navbar-item-side" @click="toggleSidebar">Contact</router-link>
+                            <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
+                            class="navbar-item-side" @click="toggleSidebar">Order</router-link>
                         <div class="side-bar-btns">
                             <div class="franchise-btn-side" @click="toggleSidebar">
                                 <router-link to="/MainContact" class="navbar-item-1"><button>Contact

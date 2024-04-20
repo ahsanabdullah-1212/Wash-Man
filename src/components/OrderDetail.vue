@@ -6,7 +6,7 @@
                     <div class="order-col-1-row-1-col-1-category">
                         <h5 @click="toggleCategory('dry-clean')"
                             :class="{ 'active-category': activeCategory === 'dry-clean' }">
-                            Dry Clean/Launder & Press
+                            Dry Clean
                         </h5>
                         <h5 @click="toggleCategory('wash-fold')"
                             :class="{ 'active-category': activeCategory === 'wash-fold' }">
@@ -14,7 +14,7 @@
                         </h5>
                         <h5 @click="toggleCategory('carpets')"
                             :class="{ 'active-category': activeCategory === 'carpets' }">
-                            Carpets
+                            Carpets 
                         </h5>
                     </div>
                     <div class="order-col-1-row-1-col-2">
