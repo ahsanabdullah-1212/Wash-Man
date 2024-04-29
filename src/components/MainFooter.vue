@@ -23,7 +23,7 @@
                     <h4>Developed by Walibu</h4>
                 </div>
                 <div class="footer-col-2">
-                    <h4>Address: 2823 W Park Row Dr Arlington, TX 76013</h4>
+                    <h4>Address: 2823 W Park Row Dr Lahore, Pk 76013</h4>
                 </div>
             </div>
         </div>

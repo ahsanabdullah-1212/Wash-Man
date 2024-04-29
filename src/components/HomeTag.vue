@@ -2,7 +2,7 @@
     <div class="main-tag">
         <div class="about-row-descp">
             <div class="row-descp-col-1">
-                <h3>DROP-OFF LAUNDRY IN ARLINGTON, TX | WAVEMAX WASH & FOLD LAUNDROMAT | WAVEMAX® LAUNDRY</h3>
+                <h3>DROP-OFF LAUNDRY IN Lahore, Pk | WashMan WASH & FOLD LAUNDROMAT | WashMan® LAUNDRY</h3>
             </div>
             <div class="row-descp-col-1">
                 <div class="row-descp-link"><router-link to="/" class="row-descp">Home<i

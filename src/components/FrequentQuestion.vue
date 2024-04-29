@@ -21,7 +21,7 @@
                         <div class="form-group-3">
                             <input class="checkbox" type="checkbox" id="agree" name="agree" required>
                             <label for="agree">By checking this box and submitting this form, you agree to our PRIVACY
-                                POLICY and you consent to receive phone calls, text messages, and emails from WaveMAX
+                                POLICY and you consent to receive phone calls, text messages, and emails from WashMan
                                 Laundry at the phone number and email address above. You can opt out any time by
                                 replying STOP to a text or by clicking the "Unsubscribe" link in an email message.
                                 Message and data rates may apply.</label>
@@ -38,22 +38,13 @@
                 <div class="links">
                     <ul>
                         <router-link to="/">
-                            <li>WAVEMAX LIVE</li>
-                        </router-link>
-                        <router-link to="/">
                             <li>HOME</li>
                         </router-link>
                         <router-link to="/SelfServe">
                             <li>SELF-SERVE LAUNDRY</li>
                         </router-link>
-                        <router-link to="/WashDry">
-                            <li>WASH-DRY-FOLD</li>
-                        </router-link>
                         <router-link to="/PickupDelivery">
                             <li>PICKUP & DELIVERY</li>
-                        </router-link>
-                        <router-link to="/AboutPage">
-                            <li>ABOUT US</li>
                         </router-link>
                         <router-link to="/FAQ">
                             <li>FAQ</li>
@@ -148,12 +139,21 @@ export default {
     filter: invert();
     border: 0;
 }
-
+.links a {
+    text-decoration: none;
+}
 .links li {
     margin: 5px;
     margin-left: 0px !important;
     color: #fff;
+    transition: color 0.3s ease;
 }
+
+.links li:hover {
+    color: #8FBE00;
+    text-decoration: none;
+}
+
 
 .link-head img {
     margin: 20px;

@@ -33,7 +33,7 @@
           aria-expanded="false" aria-controls="collapseExample">
           <span class="col-2"></span>
           <span class="col">
-            How much does it cost to wash clothes at WaveMAX Laundry?
+            How much does it cost to wash clothes at WashMan Laundry?
           </span>
           <span class="col-2">
             <i class="fa-solid fa-angle-down"></i>
@@ -42,7 +42,7 @@
         <div class="collapse" id="shippingInformation2">
           <div class="description">
             The cost varies by location. If you want to know the prices, you may want to check our locations page and
-            look for a WaveMAX laundromat near you to learn more about the prices.
+            look for a WashMan laundromat near you to learn more about the prices.
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@
           aria-expanded="false" aria-controls="collapseExample">
           <span class="col-2"></span>
           <span class="col">
-            How often does WaveMAX Laundry clean their machines?
+            How often does WashMan Laundry clean their machines?
           </span>
           <span class="col-2">
             <i class="fa-solid fa-angle-down"></i>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <HomeTag/>
+        <!-- <HomeTag/>
         <washingFold/>
         <LaundromatAmenities/>
         <CustomerTestominals/>
@@ -8,30 +8,30 @@
         <AskedQuestion/>
         <FrequentQuestion/>
         <MainFooter/>
-        <router-view/>
+        <router-view/> -->
     </div>
 </template>
 <script>
-import MainFooter from '@/components/MainFooter.vue';
-import LaundryMachines2 from '@/components/LaundryMachines2.vue';
-import LaundromatAmenities from '@/components/LaundromatAmenities.vue';
-import CustomerTestominals from '@/components/CustomerTestominals.vue';
-import FrequentQuestion from '@/components/FrequentQuestion.vue';
-import AskedQuestion from '@/components/AskedQuestion.vue';
-import HomeTag from '@/components/HomeTag.vue';
-import washingFold from '@/components/washingFold.vue';
+// import MainFooter from '@/components/MainFooter.vue';
+// import LaundryMachines2 from '@/components/LaundryMachines2.vue';
+// import LaundromatAmenities from '@/components/LaundromatAmenities.vue';
+// import CustomerTestominals from '@/components/CustomerTestominals.vue';
+// import FrequentQuestion from '@/components/FrequentQuestion.vue';
+// import AskedQuestion from '@/components/AskedQuestion.vue';
+// import HomeTag from '@/components/HomeTag.vue';
+// import washingFold from '@/components/washingFold.vue';
  
-export default {
-    name: 'WashDry',
-    components: {
-        HomeTag,
-        LaundryMachines2,
-        FrequentQuestion,
-        washingFold,
-        AskedQuestion,
-        CustomerTestominals,
-        LaundromatAmenities,
-        MainFooter,
-    }
-}
+// export default {
+//     name: 'WashDry',
+//     components: {
+//         HomeTag,
+//         LaundryMachines2,
+//         FrequentQuestion,
+//         washingFold,
+//         AskedQuestion,
+//         CustomerTestominals,
+//         LaundromatAmenities,
+//         MainFooter,
+//     }
+// }
 </script>

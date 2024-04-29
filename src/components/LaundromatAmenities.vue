@@ -58,6 +58,7 @@ export default {
 .amenities-list li{
     font-size: 20px; 
     padding-bottom: 10px;
+    color: #fff;
 }
 @media(max-width:768px){
     .amenities-list li {
@@ -92,6 +93,7 @@ export default {
 .amenities-row h2 {
     margin: 10px;
     margin-left: 35px;
+    color: #fff;
     padding: 25px;
     font-size: 45px;
 }

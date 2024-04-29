@@ -5,17 +5,17 @@
         </div>
         <div class="about-description">
             <p>
-                WaveMAX Laundry in Arlington, TX is not your typical laundromat! Friendly staff, clean and comfortable!
+                WashMan Laundry in Lahore, Pk is not your typical laundromat! Friendly staff, clean and comfortable!
                 Our fully attended laundromat is different than any other you have encountered. We are a family-owned
                 and operated laundromat and are passionate about providing the best customer service around! That means
                 100% complete satisfaction is guaranteed! Come experience amazing today!
             </p>
             <br>
             <p>
-                We have the best self-serve washing equipment in Arlington. The efficiency of our washing machines and
+                We have the best self-serve washing equipment in Lahore. The efficiency of our washing machines and
                 dryers will get you in and out in 1/2 the time of other laundromats. Come experience our
-                state-of-the-art laundromat today to find out for yourself. We are conveniently located in Arlington,
-                TX.
+                state-of-the-art laundromat today to find out for yourself. We are conveniently located in Lahore,
+                Pk.
             </p>
             <br>
             <p>
@@ -26,7 +26,7 @@
             <br>
             <p>
                 Own a business that goes through a lot of laundries? Try our Commercial Laundry Service today! There are
-                no contracts, lower minimums, and faster turnaround time than the other laundry services in Arlington.
+                no contracts, lower minimums, and faster turnaround time than the other laundry services in Lahore.
             </p>
         </div>
     </div>

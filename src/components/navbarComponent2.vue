@@ -5,7 +5,7 @@
                 <div class="phone-details">
                     <div class="call">
                         <img src="@/assets/images/phone.png" alt="">&nbsp;&nbsp;
-                        <p>(682) 323-4466</p>
+                        <p>+92 323 4841297</p>
                     </div>
                     <div class="time">
                         <img src="@/assets/images/clock.png" alt="">&nbsp;&nbsp;
@@ -13,10 +13,12 @@
                     </div>
                 </div>
                 <div class="social">
-                    <a href="https://www.facebook.com/profile.php?id=100090017744249" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=03351757297" target="_blank"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090017744249" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=03351757297" target="_blank"><i
+                            class="fa-brands fa-google"></i></a>
                     <a href="https://stechsole.com" target="_blank"><i class="fa-solid fa-phone"></i></a>
-                    
+
                     <img src="@/assets/images/country.png" alt="">
                 </div>
             </div>
@@ -30,7 +32,7 @@
                     <img src="@/assets/images/map.png" alt="">
                     <div class="location-desc">
                         <h1>2823 W Park Row Dr
-                            Arlington, TX 76013</h1>
+                            Lahore, Pk 76013</h1>
                     </div>
                 </div>
                 <div class="nav-2-btns">
@@ -50,11 +52,11 @@
                 <nav class="navbar">
                     <ul id="navbar">
                         <router-link to="/" v-bind:class="{ 'active': isActive('/') }"
-                            class="navbar-item-1">Home</router-link>
+                            class="navbar-item">Home</router-link>
                         <router-link to="/SelfServe" v-bind:class="{ 'active': isActive('/SelfServe') }"
-                            class="navbar-item">Self-Serve Laundry</router-link>
-                        <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
-                            class="navbar-item">Wash-Dry-Fold</router-link>
+                            class="navbar-item">About</router-link>
+                        <!-- <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
+                            class="navbar-item">Wash-Dry-Fold</router-link> -->
                         <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }"
                             class="navbar-item">Pickup & Delivery</router-link>
                         <div v-bind:class="{ 'active': isActive('/Testimonials') }">
@@ -64,7 +66,7 @@
                             class="navbar-item">Contact Us</router-link>
                         <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
                             class="navbar-item">Order</router-link>
-                        <div class="drop-down-menu">
+                        <!-- <div class="drop-down-menu">
 
                             <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
                                 class="navbar-item">About Us&nbsp;<i class="fa-solid fa-caret-down"></i></router-link>
@@ -79,7 +81,7 @@
 
                                 </div>
                             </transition>
-                        </div>
+                        </div> -->
 
                     </ul>
                 </nav>
@@ -96,12 +98,12 @@
                     <router-link to="/" v-bind:class="{ 'active': isActive('/') }" class="navbar-item-side-1"
                         @click="toggleSidebar">Home</router-link>
                     <router-link to="/SelfServe" v-bind:class="{ 'active': isActive('/SelfServe') }"
-                        class="navbar-item-side" @click="toggleSidebar">Self-Serve Laundry</router-link>
-                    <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
-                        class="navbar-item-side" @click="toggleSidebar">Wash-Dry-Fold</router-link>
+                        class="navbar-item-side" @click="toggleSidebar">About</router-link>
+                    <!-- <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
+                        class="navbar-item-side" @click="toggleSidebar">Wash-Dry-Fold</router-link> -->
                     <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }"
                         class="navbar-item-side" @click="toggleSidebar">Pickup & Delivery</router-link>
-                       
+
                     <div class="drop-down-menu">
                         <h3 @click="toggleAboutDropdown">
                             <router-link to="/AboutPage" @click="closeSidebar"
@@ -126,7 +128,7 @@
                         class="navbar-item-side" @click="toggleSidebar">Testimonials</router-link>
                     <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                         class="navbar-item-side" @click="toggleSidebar">Contact</router-link>
-                        <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
+                    <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
                         class="navbar-item-side" @click="toggleSidebar">Order</router-link>
                     <div class="side-bar-btns">
                         <div class="franchise-btn-side" @click="toggleSidebar">
@@ -149,9 +151,9 @@
                             <router-link to="/" v-bind:class="{ 'active': isActive('/') }"
                                 class="navbar-item-1">Home</router-link>
                             <router-link to="/SelfServe" v-bind:class="{ 'active': isActive('/SelfServe') }"
-                                class="navbar-item">Self-Serve Laundry</router-link>
-                            <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
-                                class="navbar-item">Wash-Dry-Fold</router-link>
+                                class="navbar-item">About</router-link>
+                            <!-- <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
+                                class="navbar-item">Wash-Dry-Fold</router-link> -->
                             <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }"
                                 class="navbar-item">Pickup & Delivery</router-link>
                             <div v-bind:class="{ 'active': isActive('/Testimonials') }">
@@ -161,8 +163,8 @@
                                 class="navbar-item">Contact Us</router-link>
                             <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
                                 class="navbar-item">Order</router-link>
-                                 
-                            <div class="drop-down-menu">
+
+                            <!-- <div class="drop-down-menu">
                                 <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
                                     class="navbar-item">About Us&nbsp;<i
                                         class="fa-solid fa-caret-down"></i></router-link>
@@ -177,7 +179,7 @@
 
                                     </div>
                                 </transition>
-                            </div>
+                            </div> -->
 
                         </ul>
                     </nav>
@@ -195,8 +197,8 @@
                             @click="toggleSidebar">Home</router-link>
                         <router-link to="/SelfServe" v-bind:class="{ 'active': isActive('/SelfServe') }"
                             class="navbar-item-side" @click="toggleSidebar">Self-Serve Laundry</router-link>
-                        <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
-                            class="navbar-item-side" @click="toggleSidebar">Wash-Dry-Fold</router-link>
+                        <!-- <router-link to="/WashDry" v-bind:class="{ 'active': isActive('/WashDry') }"
+                            class="navbar-item-side" @click="toggleSidebar">Wash-Dry-Fold</router-link> -->
                         <router-link to="/PickupDelivery" v-bind:class="{ 'active': isActive('/PickupDelivery') }"
                             class="navbar-item-side" @click="toggleSidebar">Pickup & Delivery</router-link>
                         <div class="drop-down-menu">
@@ -223,7 +225,7 @@
                             class="navbar-item-side" @click="toggleSidebar">Testimonials</router-link>
                         <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                             class="navbar-item-side" @click="toggleSidebar">Contact</router-link>
-                            <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
+                        <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
                             class="navbar-item-side" @click="toggleSidebar">Order</router-link>
                         <div class="side-bar-btns">
                             <div class="franchise-btn-side" @click="toggleSidebar">
@@ -298,13 +300,11 @@ export default {
     color: rgb(0, 0, 0) !important;
     width: 105px;
     transition: background-color 0.3s ease;
-    /* Change color to background-color */
 }
 
 .dropdown-content a:hover {
     background-color: #3498db;
     color: #fff;
-    /* Change text color on hover */
 }
 
 .dropdown-content.active {
@@ -447,6 +447,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #041e42;
     width: 100%;
 }
@@ -461,6 +462,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #041e42;
     width: 100%;
 }
@@ -538,7 +540,6 @@ ul {
     position: absolute;
     z-index: 1000;
     overflow: hidden;
-    margin-top: 10px !important;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -577,7 +578,6 @@ ul {
         flex-direction: column;
         align-items: center;
         height: 31px;
-        margin-top: 20px;
         justify-content: center;
         cursor: pointer;
     }
@@ -617,6 +617,7 @@ ul {
     margin: 10px;
     font-size: 18px;
     width: 190px;
+    color: #fff;
 }
 
 .location {
@@ -630,6 +631,7 @@ ul {
     .location {
         text-align: center;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
 }
@@ -819,7 +821,10 @@ ul {
         align-items: center;
     }
 }
-
+.logo-1 {
+    margin-top: -60px;
+    margin-bottom: -80px;
+}
 .logo-1 img {
     display: none;
 }
@@ -827,13 +832,21 @@ ul {
 @media(max-width:900px) {
     .logo-1 img {
         display: flex;
-        width: 250px;
+        height: auto;
+        width: 233px;
         padding: 20px;
     }
 }
 
+.logo {
+    margin-top: -66px;
+    margin-bottom: -84px;
+}
+
 .logo img {
-    margin: 10px;
+    display: block;
+    height: auto;
+    width: 233px;
 }
 
 @media(max-width:1024px) {
@@ -843,9 +856,11 @@ ul {
 }
 
 .logo-side img {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 250px;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    margin-top: -15px;
+    margin-bottom: -15px;
+    width: 233px;
 }
 
 .phone-details {
@@ -1008,10 +1023,10 @@ ul {
     transition: background-color 0.3s ease;
 }
 
-.navbar-item-1:hover {
+  /* .navbar-item-1:hover {
     background-color: #0072c4;
-    /* Blue background color on hover */
-}
+   
+}   */
 
 @media(max-width:1400px) {
     .navbar-item-1 {
@@ -1248,9 +1263,6 @@ ul {
     }
 }
 
-.logo img {
-    margin: 10px;
-}
 
 @media(max-width:1024px) {
     .logo img {

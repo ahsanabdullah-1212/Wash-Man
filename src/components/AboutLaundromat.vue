@@ -10,7 +10,7 @@
                 </div>
                 <div class="about-col-1-descp">
                     <p>
-                        We are located at 2823 W Park Row, Arlington, TX. We are equipped with Electrolux washers and
+                        We are located at 2823 W Park Row,Lahore, Pk. We are equipped with Electrolux washers and
                         dryers. They are the most efficient washers and dryers on the planet. We can accommodate small
                         loads of laundry to the largest loads imaginable. Our machines can handle from 20 lbs. of
                         laundry up to 62 lbs. of laundry in a single wash.</p>

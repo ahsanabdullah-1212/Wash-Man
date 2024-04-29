@@ -6,7 +6,7 @@
             <div class="about-col-1" data-aos="fade-down"  data-aos-delay="150">
                 <div class="about-col-1-head">
                     <img src="@/assets/images/rect.png" alt="">
-                    <h1>WASH. DRY. FOLD. LAUNDRY IN ARLINGTON, TX</h1>
+                    <h1>WASH. DRY. FOLD. LAUNDRY IN Lahore, Pk</h1>
                 </div>
                 <div class="about-col-1-descp">
                     <p>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="about-col-1-descp">
                     <p>
-                        When you bring your garments to our Laundry Drop-off location at WaveMAX Arlington, you can rest
+                        When you bring your garments to our Laundry Drop-off location at WashMan Lahore, you can rest
                         assured that your items are in experienced and caring hands. We sort all clothing into whites,
                         lights, and darks while verifying that all items are machine washable. Your clothing is washed
                         and dried completely, separate from all other orders, and all items are immediately hung on
@@ -48,7 +48,7 @@
                         fresh-pressed look.
                         <br><br>
                         We will also match and fold your socks, and there is no extra charge for kids' clothing. Have
-                        special instructions? Just let us know! WaveMAX is more than happy to meet any special requests.
+                        special instructions? Just let us know! WashMan is more than happy to meet any special requests.
                     </p>
                 </div>
             </div>

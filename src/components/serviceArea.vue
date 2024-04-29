@@ -4,8 +4,8 @@
             <div class="pickup-head">
                 <img src="@/assets/images/rect.png" alt="">
                 <h1>SERVICE AREAS</h1>
-                <p>We offer residential pickup and delivery throughout Arlington, Mansfield, Kennedale, Grand Prairie,
-                    Fort Worth, Bedford, North Richland Hills, Hurst, and Haltom City.</p>
+                <p>We offer residential pickup and delivery throughout Lahore, Karachi, Islamabad, Sialkot, Faislabad
+                    and RawalPindi areas...</p>
             </div>
             <div class="pickup-btn">
                 <button>Schedule a Pickup</button>

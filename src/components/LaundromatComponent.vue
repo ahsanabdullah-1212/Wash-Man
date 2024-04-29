@@ -65,6 +65,7 @@ export default {
     margin-top: 5px !important;
     margin: 20px;
     font-size: 20px;
+    color: #fff;
 }
 
 @media(max-width:768px) {
@@ -76,6 +77,7 @@ export default {
 .laundromat-col h2 {
     font-size: 49.62px;
     margin-bottom: 45px;
+    color: #fff;
 }
 
 @media(max-width:768px) {

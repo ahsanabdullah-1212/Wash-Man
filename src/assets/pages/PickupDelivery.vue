@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Signup/>
         <pickupSchedule/>
         <DeliveryCharges/>
         <CustomerTestominals/>
@@ -11,6 +12,7 @@
     </div>
 </template>
 <script>
+import Signup from '@/components/Signup.vue';
 import RecentBlogs from '@/components/RecentBlogs.vue';
 import JoinFamily from '@/components/JoinFamily.vue';
 import DeliveryCharges from '@/components/DeliveryCharges.vue';
@@ -23,6 +25,7 @@ export default {
     name: 'PickupDelivery',
     components: {
         RecentBlogs,
+        Signup,
         DeliveryCharges,
         JoinFamily,
         pickupSchedule,

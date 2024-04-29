@@ -3,13 +3,13 @@
        <div class="pickup-row">
           <div class="pickup-head">
              <img src="@/assets/images/rect.png" alt="">
-             <h1>JOIN THE WAVEMAX FAMILY</h1>
+             <h1>JOIN THE WashMan FAMILY</h1>
              <p>Want to join our team? We'd love to work with you!</p>
               
              <p>FULL & PART-TIME POSITIONS</p>
           </div>
           <div class="pickup-btn">
-             <button>Learn More & Apply!</button>
+             <button>Learn More </button>
           </div>
        </div>
     </div>

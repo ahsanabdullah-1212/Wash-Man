@@ -19,10 +19,9 @@
           <h1>PICKUP & DELIVERY</h1>
         </div>
         <div class="about-col-1-descp">
-          <h4>Do you hate doing laundry? Let WaveMAX do it for you!</h4>
+          <h4>Do you hate doing laundry? Let WashMan do it for you!</h4>
           <p>
-            We offer residential pickup and delivery throughout Arlington, Mansfield, Kennedale, Grand Prairie, Fort
-            Worth, Bedford, North Richland Hills, Hurst, and Haltom City areas..</p>
+            We offer residential pickup and delivery throughout Lahore, Karachi, Islamabad, Sialkot, Faislabad and RawalPindi areas..</p>
           <br>
           <p>
             We provide detergent, softeners, and hypoallergenic Free and Clear, as requested. Everything is washed per
@@ -31,7 +30,7 @@
           <br>
           <p>A small trip fee may be added depending on location. Call for final pricing.
 
-            What are the next steps when you have WaveMAX handle your laundry needs? Our process is as simple as 1-2-3!
+            What are the next steps when you have WashMan handle your laundry needs? Our process is as simple as 1-2-3!
           </p>
         </div>
       </div>
@@ -113,6 +112,7 @@
 .pickup-row {
   display: flex;
   padding: 35px;
+  margin-top: 15px!important;
   text-align: center;
   justify-content: center;
   flex-direction: column;

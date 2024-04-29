@@ -426,7 +426,7 @@ export default {
 }
 
 .search-input:hover {
-    border-color: #9370DB;
+    border-color: #009CDE;
 }
 
 .addtocart-btn button {
@@ -469,7 +469,7 @@ export default {
 }
 
 .addtocart-btn button:hover {
-    background-color: #9370DB;
+    background-color: #009CDE;
     color: #fff;
 }
 
@@ -489,7 +489,7 @@ export default {
 }
 
 .quantity-control button:hover {
-    background-color: #9370DB;
+    background-color: #009CDE;
     color: #fff;
 }
 
@@ -595,9 +595,9 @@ export default {
 }
 
 .order-col-detail button:hover {
-    background-color: #9370DB;
+    background-color: #009CDE;
     color: #fff;
-    border-color: #9370DB;
+    border-color: #009CDE;
 }
 
 .order-col-detail {
@@ -668,7 +668,7 @@ export default {
     font-size: 14px;
     color: #fff;
     border: none;
-    background: #A3A0FB;
+    background: #009CDE;
     border-radius: 4px;
     padding: 0 25px;
     height: 50px;
@@ -776,7 +776,7 @@ export default {
 }
 
 .order-col-1-row-1-col-1:hover {
-    border-color: #9370DB;
+    border-color: #009CDE;
 
 }
 

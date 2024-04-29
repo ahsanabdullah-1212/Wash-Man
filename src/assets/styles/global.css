@@ -1,9 +1,21 @@
 * {
     color: #0e0d0d;
     margin: 0;
-    font-family: "Playfair Display", sans-serif;
+    font-family: "BeVietnamPro-Black" , sans-serif;
 }
-
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-family: "BeVietnamPro-Black" , sans-serif!important;
+}
+.fa-solid.fa-car {
+    color: #fff;
+}
 #navbar {
     margin-bottom: 0px !important;
 }

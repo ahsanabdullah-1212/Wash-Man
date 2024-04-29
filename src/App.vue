@@ -74,6 +74,11 @@ export default {
   src: url(@/assets/fonts/Corben-Regular.ttf) format("truetype");
 }
  
+@font-face {
+  font-family: "BeVietnamPro-Black";
+  src: url(@/assets/fonts/BeVietnamPro-Black.ttf) format("truetype");
+}
+ 
 
 .scroll-top-button {
   position: fixed;

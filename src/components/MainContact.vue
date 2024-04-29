@@ -33,7 +33,7 @@
                         <div class="form-group-3">
                             <input class="checkbox" type="checkbox" id="agree" name="agree" required>
                             <label for="agree">By checking this box and submitting this form, you agree to our PRIVACY
-                                POLICY and you consent to receive phone calls, text messages, and emails from WaveMAX
+                                POLICY and you consent to receive phone calls, text messages, and emails from  WashMan
                                 Laundry at the phone number and email address above. You can opt out any time by
                                 replying STOP to a text or by clicking the "Unsubscribe" link in an email message.
                                 Message and data rates may apply.</label>
