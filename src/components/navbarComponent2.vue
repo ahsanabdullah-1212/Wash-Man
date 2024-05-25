@@ -260,7 +260,7 @@ export default {
     },
     methods: {
         handleScroll() {
-            this.showScrollNavbar = window.scrollY > 200;
+            this.showScrollNavbar = window.scrollY > 100;
         },
         toggleAboutDropdown() {
             this.showAboutDropdown = !this.showAboutDropdown;
