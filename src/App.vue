@@ -86,7 +86,7 @@ export default {
   bottom: 30px;
   right: 30px;
   background-color: transparent;
-  color: #fff;
+  color: #000000;
   padding: 10px 20px;
   border: none;
   border-radius: 50%;

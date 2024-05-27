@@ -252,6 +252,11 @@ export default {
         height: 11.5rem;
     }
 }
+@media(max-width:310px) {
+    .laundry-machine-col-2-col-2 img {
+        height: 9.5rem;
+    }
+}
 
 .laundry-machine-col-2-col-2 {
     display: flex;

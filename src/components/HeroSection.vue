@@ -38,6 +38,7 @@ export default {
 </script>
 <style>
 .lan {
+    padding-top:4px;
     padding-left: 0.5em;
     padding-right: 0.5em;
     border-radius: 51px;
@@ -63,6 +64,7 @@ export default {
 
 @media(max-width:1024px) {
     .lan {
+        padding-top: 2px;
         font-size: 15px !important;
         height: 20px;
     }
@@ -121,7 +123,7 @@ export default {
         font-size: 69.99px;
     }
 }
-@media(max-width:1024px) {
+@media(max-width:1025px) {
     .max {
         font-size: 46px;
     }
@@ -152,6 +154,11 @@ export default {
     text-align: left;
 }
 
+@media(max-width:430px){
+    .hero-col-decp-2 {
+        margin-left: 10px;
+    }
+}
 .hero-col-decp-2 h1 {
     font-family: "Playfair Display", sans-serif;
     font-size: 99.5px;
@@ -164,7 +171,7 @@ export default {
     }
 }
 
-@media(max-width:1024px) {
+@media(max-width:1280px) {
     .hero-col-decp-2 h1 {
         font-size: 46px;
     }
@@ -214,13 +221,13 @@ export default {
     background-size: cover;
 }
 
-@media(max-width:1024px){
+@media(max-width:1280px){
     .hero-section {
         height: 493px;
     }
 
 }
-@media(max-width:450px){
+@media(max-width:600px){
     .hero-section {
         height: auto;
     }
@@ -249,13 +256,30 @@ export default {
 
 }
 
-@media(max-width:1024px) {
+@media(max-width:1280px) {
     .hero-section-col {
         right: 158px;
         padding: 45px;
     }
 }
-
+@media(max-width:750px) {
+    .hero-section-col {
+        right: 85px;
+        margin-top: 28px;
+    }
+}
+@media(max-width:630px) {
+    .hero-section-col {
+        right: 45px;
+        margin-top: 28px;
+    }
+}
+@media(max-width:525px) {
+    .hero-section-col {
+        right: 35px;
+        margin-top: 28px;
+    }
+}
 @media(max-width:450px) {
     .hero-section-col {
         right: 8px;
@@ -284,8 +308,8 @@ export default {
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 100px;
-        height: 30px;
+        width: 111px;
+        height: 43px;
     }
 }
 </style>

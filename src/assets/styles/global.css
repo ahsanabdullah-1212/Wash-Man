@@ -222,4 +222,6 @@ a {
         padding-top: 10px;
     }
 }
- 
+ .social img {
+    width: 54px;
+ }

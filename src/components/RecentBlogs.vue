@@ -367,7 +367,7 @@ export default {
     display: none;
 }
 
-@media(max-width:600px) {
+@media(max-width:750px) {
     .small-blogs {
         display: flex;
         flex-direction: column;

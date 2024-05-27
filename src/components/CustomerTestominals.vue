@@ -310,6 +310,10 @@ export default {
 @media(max-width:768px) {
     .customer-reviews {
         margin: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -318,7 +322,7 @@ export default {
     height: 100%;
 }
 
-@media(max-width:450px) {
+@media(max-width:750px) {
     .swiper {
         display: none;
     }
@@ -342,7 +346,11 @@ export default {
 .review-desc-1 h5 {
     color: #000;
 }
-
+@media(max-width:1000px) {
+    .review-desc-1 h5 {
+        font-size: 11px;
+    }
+}
 @media(max-width:800px) {
     .review-desc-1 h5 {
         font-size: 11px;
@@ -376,7 +384,11 @@ export default {
     flex-direction: column;
     padding: 15px;
 }
-
+@media(max-width:430px){
+    .customer-head {
+        padding: 7px;
+    }
+}
 .customer-head h2 {
     font-size: 42px;
     margin-top: 15px;
@@ -384,7 +396,11 @@ export default {
     text-align: center;
     padding: 15px;
 }
-
+@media(max-width:310px){
+    .customer-head h2 {
+        font-size: 30px;
+    }
+}
 .customer-head img {
     width: 108px;
 }
@@ -399,7 +415,7 @@ export default {
     display: none;
 }
 
-@media(max-width:450px) {
+@media(max-width:750px) {
     .review-2 {
         margin-top: 15px;
         margin-bottom: 15px;
@@ -435,7 +451,7 @@ export default {
 
 .review-1 {
     width: 25rem;
-    height: 200px;
+    height: 235px;
     border-radius: 12px;
     justify-content: space-between;
     display: flex;
@@ -446,9 +462,9 @@ export default {
     transition: transform 0.3s ease;
 }
 
-@media(max-width:800px) {
+@media(max-width:850px) {
     .review-1 {
-        height: 231px;
+        height: 251px;
     }
 }
 

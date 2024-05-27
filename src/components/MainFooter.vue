@@ -9,9 +9,9 @@
                 <div class="footer-col-2">
                     <img src="@/assets/images/weather.png" alt="">
                     <div class="footer-col-2-desc">
-                        <h6>Pantego, TX</h6>
+                        <h6>Lahore, Pk</h6>
                         <h4>Chances Rain Showers</h4>
-                        <h3>69°C</h3>
+                        <h3>39°C</h3>
                     </div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                     <h4>© 2024 All rights reserved.</h4>
                     <h4>Privacy Policy</h4>
                     <h4>Terms & Conditions</h4>
-                    <h4>Developed by Walibu</h4>
+                    <h4>Developed by Stech Sole</h4>
                 </div>
                 <div class="footer-col-2">
                     <h4>Address: 2823 W Park Row Dr Lahore, Pk 76013</h4>
@@ -56,11 +56,12 @@ export default {
     flex-direction: row;
     padding: 18px;
 }
-/* @media(max-width:750px){
+  @media(max-width:527px){
     .footer-col-2 {
+        text-align: center;
         flex-direction: column;
     }
-} */
+}  
 .footer-col-1 img {
     border-radius: 9px;
     margin: 20px;

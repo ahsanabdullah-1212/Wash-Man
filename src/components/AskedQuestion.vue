@@ -72,7 +72,7 @@
           aria-expanded="false" aria-controls="collapseExample">
           <span class="col-2"></span>
           <span class="col">
-            Should you wash white clothes separately?
+            Should you wash white clothes separately or not?
           </span>
           <span class="col-2">
             <i class="fa-solid fa-angle-down"></i>
@@ -219,7 +219,7 @@ export default {
 
 @media(max-width:380px) {
   .product-detail-block.border-wrapper {
-    /* font-size: 12px; */
+     font-size: 12px;  
     padding: 12px;
   }
 }
@@ -241,7 +241,7 @@ export default {
 
 @media(max-width:380px) {
   .description {
-    /* font-size: 12px; */
+    font-size: 12px;  
     padding: 12px;
   }
 }

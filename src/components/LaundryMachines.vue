@@ -72,7 +72,7 @@ export default {
     font-size: 22px;
     color: #000;
 }
-@media(max-width:1024px){
+@media(max-width:1225px){
     .laundry-machine-row-2-col-2 p {
         margin-top: 5px;
         font-size: 14px;
@@ -105,7 +105,7 @@ export default {
     font-size: 50px;
     position: relative;
 }
-@media(max-width:1024px){
+@media(max-width:1225px){
     .laundry-machine-row-2-col-1 h2 {
         font-size: 37px;
     }
@@ -132,7 +132,7 @@ export default {
     flex-direction: row;    
     justify-content: center;
 }
-@media(max-width:1024px){
+@media(max-width:1225px){
     .laundry-machine-row-2 {
         padding-top: 20px;
     }
@@ -175,7 +175,7 @@ export default {
     color: #000;
     font-size: 20px;
 }
-@media(max-width:1024px){
+@media(max-width:1225px){
     .laundry-machine-col-1 p {
         font-size: 15px;
     }
@@ -186,7 +186,7 @@ export default {
     margin-bottom: 30px;
     color: #000;
 }
-@media(max-width:1024px){
+@media(max-width:1225px){
     .laundry-machine-col-1 h2{
         font-size: 30.22px;
     }
@@ -210,7 +210,7 @@ export default {
     justify-content: center;
     flex-direction: row;
 }
-@media(max-width:768px){
+@media(max-width:800px){
     .laundry-machine-col-2 {
         flex-direction: column;
     }
@@ -229,7 +229,7 @@ export default {
     height: 21rem;
     margin: 20px;
 }
-@media(max-width:1024px){
+@media(max-width:1225px){
     .laundry-machine-col-2-col-1 img  {
         height: 11rem;
     }
@@ -237,6 +237,11 @@ export default {
 @media(max-width:600px){
     .laundry-machine-col-2-col-1 img  {
         height: 15rem;
+    }
+}
+@media(max-width:310px){
+    .laundry-machine-col-2-col-1 img  {
+        height: 14rem;
     }
 }
 .laundry-machine-col-2-col-2 img {
@@ -248,7 +253,7 @@ export default {
         margin: 6px;
     }
 }
-@media(max-width:1024px){
+@media(max-width:1225px){
     .laundry-machine-col-2-col-2 img  {
         height: 11rem;
     }
