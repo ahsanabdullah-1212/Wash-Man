@@ -64,8 +64,11 @@
                         </div>
                         <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                             class="navbar-item">Contact Us</router-link>
-                        <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
-                            class="navbar-item">Order</router-link>
+                        <a href="https://app.washman.pk/portal#/prices"
+                            v-bind:class="{ 'active': isActive('https://app.washman.pk/portal#/prices') }"
+                            class="navbar-item">
+                            Order
+                        </a>
                         <!-- <div class="drop-down-menu">
 
                             <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
@@ -128,8 +131,12 @@
                         class="navbar-item-side" @click="toggleSidebar">Testimonials</router-link>
                     <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                         class="navbar-item-side" @click="toggleSidebar">Contact</router-link>
-                    <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
-                        class="navbar-item-side" @click="toggleSidebar">Order</router-link>
+                    <a href="https://app.washman.pk/portal#/prices"
+                        v-bind:class="{ 'active': isActive('https://app.washman.pk/portal#/prices') }"
+                        class="navbar-item-side" @click="toggleSidebar">
+                        Order
+                    </a>
+
                     <div class="side-bar-btns">
                         <div class="franchise-btn-side" @click="toggleSidebar">
                             <router-link to="/MainContact" class="navbar-item-1"><button>Contact
@@ -161,8 +168,12 @@
                             </div>
                             <router-link to="/MainContact" v-bind:class="{ 'active': isActive('/MainContact') }"
                                 class="navbar-item">Contact Us</router-link>
-                            <router-link to="/YourOrder" v-bind:class="{ 'active': isActive('/YourOrder') }"
-                                class="navbar-item">Order</router-link>
+                            <a href="https://app.washman.pk/portal#/prices"
+                                v-bind:class="{ 'active': isActive('https://app.washman.pk/portal#/prices') }"
+                                class="navbar-item">
+                                Order
+                            </a>
+
 
                             <!-- <div class="drop-down-menu">
                                 <router-link to="/AboutPage" v-bind:class="{ 'active': isActive('/AboutPage') }"
@@ -265,8 +276,8 @@ export default {
         toggleAboutDropdown() {
             this.showAboutDropdown = !this.showAboutDropdown;
         },
-        isActive(route) {
-            return this.$route.path === route;
+        isActive(path) {
+            return this.$route.path === path || window.location.href.includes(path);
         },
         toggleSidebar() {
             this.isSidebarOpen = !this.isSidebarOpen;
@@ -821,10 +832,12 @@ ul {
         align-items: center;
     }
 }
+
 .logo-1 {
     margin-top: -60px;
     margin-bottom: -80px;
 }
+
 .logo-1 img {
     display: none;
 }
@@ -1023,7 +1036,7 @@ ul {
     transition: background-color 0.3s ease;
 }
 
-  /* .navbar-item-1:hover {
+/* .navbar-item-1:hover {
     background-color: #0072c4;
    
 }   */

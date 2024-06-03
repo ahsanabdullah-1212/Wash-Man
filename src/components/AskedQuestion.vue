@@ -93,7 +93,7 @@
           aria-expanded="false" aria-controls="collapseExample">
           <span class="col-2"></span>
           <span class="col">
-            Why is self-service laundry important?
+            Why is self laundry important?
           </span>
           <span class="col-2">
             <i class="fa-solid fa-angle-down"></i>
