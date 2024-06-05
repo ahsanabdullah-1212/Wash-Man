@@ -1,10 +1,7 @@
 <template>
     <div class="main-sign">
-      <button v-if="!isSignedUp" @click="showSignupPopup" class="signup-button">Sign Up</button>
-      <div v-else class="success-message">
-        <p>Thanks for signing up, {{ formData.name }}!</p>
-        <button @click="showSigninPopup" class="signup-button">Sign In</button>
-      </div>
+      <a href="https://app.washman.pk/bestil"><button class="signup-button">Sign Up</button></a>
+      
   
       <div v-if="isSignupPopupVisible" class="popup-overlay">
         <div class="popup">

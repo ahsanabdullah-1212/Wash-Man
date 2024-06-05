@@ -8,7 +8,7 @@
           PM and an afternoon window from 1 PM to 4 PM. Our driver will text you when they are on the way!</p>
       </div>
       <div class="pickup-btn">
-        <button>Schedule a Pickup</button>
+        <a href="https://app.washman.pk/portal#/prices"><button>Schedule a Pickup</button></a>
       </div>
     </div>
     <div class="about-row">
