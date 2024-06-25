@@ -1,10 +1,10 @@
 <template>
     <div class="main-question">
-        <div class="main-question-row-2">
-            <h1>Contact Us</h1>
-            <div class="main-map-2">
-                <iframe
-            className="my_map"
+      <div class="main-question-row-2">
+        <h1>Contact Us</h1>
+        <div class="main-map-2">
+          <iframe
+            class="my_map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.4414424483393!2d74.4166647!3d31.566940300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f0cddfefa15%3A0x82458296d42c5926!2sSTechSole!5e0!3m2!1sen!2s!4v1675708925868!5m2!1sen!2s"
             width="100%"
             height="100%"
@@ -13,55 +13,118 @@
             referrerPolicy="no-referrer-when-downgrade"
             title="maplocation"
           ></iframe>
-            </div>
-            <div class="main-contact-2">
-                <div class="container">
-                    <img src="@/assets/images/rect.png"  alt=""> 
-                    <h1>Contact Us</h1>
-                    <form id="contactForm">
-                        <div class="form-group-1">
-                            <input type="text" id="firstName" name="firstName" required placeholder="First Name...">
-                            <input type="text" id="lastName" name="lastName" required placeholder="Last Name...">
-                        </div>
-                        <div class="form-group-2">
-                            <input type="text" id="phone" name="phone" required placeholder="Your Phone...">
-                            <input type="email" id="email" name="email" required placeholder="Your Email...">
-                        </div> 
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required placeholder="Your Message..."></textarea>
-                        </div>
-                        <div class="form-group-3">
-                            <input class="checkbox" type="checkbox" id="agree" name="agree" required>
-                            <label for="agree">By checking this box and submitting this form, you agree to our PRIVACY
-                                POLICY and you consent to receive phone calls, text messages, and emails from  WashMan
-                                Laundry at the phone number and email address above. You can opt out any time by
-                                replying STOP to a text or by clicking the "Unsubscribe" link in an email message.
-                                Message and data rates may apply.</label>
-                        </div>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-             
-           
         </div>
+        <div class="main-contact-2">
+          <div class="container">
+            <img src="@/assets/images/rect.png" alt="" />
+            <h1>Contact Us</h1>
+            <form id="contactForm" ref="contactForm" @submit.prevent="sendEmail">
+              <div class="form-group-1">
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  placeholder="First Name..."
+                />
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  placeholder="Last Name..."
+                />
+              </div>
+              <div class="form-group-2">
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="Your Phone..."
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Your Email..."
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Your Message..."
+                ></textarea>
+              </div>
+              <div class="form-group-3">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="agree"
+                  name="agree"
+                  required
+                />
+                <label for="agree">
+                  By checking this box and submitting this form, you agree to our
+                  PRIVACY POLICY and you consent to receive phone calls, text
+                  messages, and emails from WashMan Laundry at the phone number
+                  and email address above. You can opt out any time by replying
+                  STOP to a text or by clicking the "Unsubscribe" link in an email
+                  message. Message and data rates may apply.
+                </label>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-</template>
-
-<script>
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-export default {
+  </template>
+  
+  <script>
+  import emailjs from '@emailjs/browser';
+  
+  export default {
     name: 'MainContact',
-    mounted() {
-        AOS.init();
+    methods: {
+      sendEmail() {
+        // Add console logs to debug
+        console.log('Form Reference:', this.$refs.contactForm);
+        
+        emailjs
+          .sendForm(
+            'service_q8kemva',
+            'template_38t6kpt',
+            this.$refs.contactForm,
+            '5nKo5y1sZXI-TcCGG'
+          )
+          .then(
+            (result) => {
+              console.log('EmailJS Result:', result.text);
+              alert('Message sent successfully!');
+            },
+            (error) => {
+              console.error('EmailJS Error:', error);
+              alert('Failed to send message, please try again later.');
+            }
+          )
+          .catch((error) => {
+            console.error('Unexpected Error:', error);
+            alert(`Error: ${error.message}`);
+          });
+      },
     },
-};
-</script>
-
-
+  };
+  </script>
+  
+  <style>
+  /* Your existing styles */
+  </style>
+  
 <style>
 .main-question {
     margin-top: 35px;
@@ -70,18 +133,11 @@ export default {
     height: 700px;
     width:100%
 }
- 
- 
- 
- 
 .main-contact-2 {
     padding: 20px;
     background-color: #21a0fb;
     width:100%
 }
- 
- 
- 
 .main-question-row-2 {
     display: flex;
     flex-direction: column;
@@ -118,10 +174,8 @@ export default {
     margin-top: 0.325rem;
     vertical-align: top;
     background-color: #fefefe;
-    background-size: contain;
-    
+    background-size: contain;  
 }
-
 .container h1 {
     margin-left: 10px;
     color: #fff;
@@ -141,8 +195,7 @@ export default {
     margin: 10px;
     border-radius: 12px!important;
     background: #21a0fb;
-    color: #cbcbcb;
-    
+    color: #cbcbcb;   
 }
 .form-group-1 input{
     margin: 10px;
