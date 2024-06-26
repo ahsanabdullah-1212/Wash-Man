@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('https://washman.pk/'),
   routes: [
     { path: '/', name: 'LandingPage', component: () => import('../pages/LandingPage.vue') },
     { path: '/SelfServe', name: 'SelfServe', component: () => import('../pages/SelfServe.vue') },
